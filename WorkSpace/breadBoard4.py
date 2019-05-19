@@ -88,7 +88,7 @@ while True:
                             keepSolidity2 = solidity2 > 0.9
                             keepAspectRatio2 = aspectRatio2 >= 0.8 and aspectRatio2 <= 1.2
 
-                            if keepDims and keepSolidity and keepAspectRatio:
+                            if keepDims2 and keepSolidity2 and keepAspectRatio2:
                                 cv2.drawContours(frame, [approx], -1, (0, 0, 255), 4)
                                 status = "Target(s) Acquired"
 

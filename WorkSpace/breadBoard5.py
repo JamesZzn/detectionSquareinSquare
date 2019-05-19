@@ -27,7 +27,7 @@ OPENCV_OBJECT_TRACKERS = {
 }
 
 tracker = OPENCV_OBJECT_TRACKERS["csrt"]()
-
+count = 0
 # keep looping
 while True:
     # grab the current frame and initialize the status text
@@ -53,17 +53,17 @@ while True:
     if initBB is not None:
         # grab the new bounding box coordinates of the object
         (success, box) = tracker.update(frame)
-
+        count = 1 + count
         # check to see if the tracking was a success
-        if success:
-            (x, y, w, h) = [int(v) for v in box]
-            cv2.rectangle(frame, (x, y), (x + w, y + h),
-                          (0, 255, 0), 2)
 
-        else:
+        (x, y, w, h) = [int(v) for v in box]
+        cv2.rectangle(frame, (x, y), (x + w, y + h),
+                      (0, 255, 0), 2)
+
+        if count == 40:
             initBB = None
             print("fps ",success,box, initBB)
-
+            count = 0
         # update the FPS counter
         fps.update()
         fps.stop()
