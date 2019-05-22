@@ -64,7 +64,7 @@ while True:
             if keepDims and keepSolidity and keepAspectRatio:
                 edged2 = edged.copy()
                 edged2[:, :] = 0
-                edged2[y + 10:y + h - 10, x + 10:x + w - 10] = edged[y + 10:y + h - 10, x + 10:x + w - 10]
+                edged2[y + 30:y + h - 30, x + 30:x + w - 30] = edged[y + 30:y + h - 30, x + 30:x + w - 30]
                 cnts2 = cv2.findContours(edged2.copy(), cv2.RETR_EXTERNAL,
                                          cv2.CHAIN_APPROX_SIMPLE)
                 cnts2 = imutils.grab_contours(cnts2)

@@ -104,7 +104,7 @@ while True:
 
                 # compute whether or not the width and height, solidity, and
                 # aspect ratio of the con tour falls within appropriate bounds
-                keepDims = w > 25 and h > 25
+                keepDims = w > 15 and h > 15
                 keepSolidity = solidity > 0.9
                 keepAspectRatio = aspectRatio >= 0.8 and aspectRatio <= 1.2
 
@@ -132,7 +132,7 @@ while True:
 
                                 # compute whether or not the width and height, solidity, and
                                 # aspect ratio of the contour falls within appropriate bounds
-                                keepDims2 = w2 > 25 and h2 > 25
+                                keepDims2 = w2 > 5 and h2 > 5
                                 keepSolidity2 = solidity2 > 0.9
                                 keepAspectRatio2 = aspectRatio2 >= 0.8 and aspectRatio2 <= 1.2
 

@@ -60,7 +60,7 @@ while True:
         cv2.rectangle(frame, (x, y), (x + w, y + h),
                       (0, 255, 0), 2)
 
-        if count == 40:
+        if count == 30:
             initBB = None
             print("fps ",success,box, initBB)
             count = 0
@@ -104,8 +104,8 @@ while True:
 
                 # compute whether or not the width and height, solidity, and
                 # aspect ratio of the con tour falls within appropriate bounds
-                keepDims = w > 25 and h > 25
-                keepSolidity = solidity > 0.9
+                keepDims = w > 5 and h > 5
+                keepSolidity = solidity > 0.8
                 keepAspectRatio = aspectRatio >= 0.8 and aspectRatio <= 1.2
 
                 # ensure that the contour passes all our tests
@@ -132,19 +132,20 @@ while True:
 
                                 # compute whether or not the width and height, solidity, and
                                 # aspect ratio of the contour falls within appropriate bounds
-                                keepDims2 = w2 > 25 and h2 > 25
-                                keepSolidity2 = solidity2 > 0.9
+                                keepDims2 = w2 > 5 and h2 > 5
+                                keepSolidity2 = solidity2 > 0.8# oranlarla oynandi hassiyeti düşürmek icin
                                 keepAspectRatio2 = aspectRatio2 >= 0.8 and aspectRatio2 <= 1.2
 
                                 if keepDims2 and keepSolidity2 and keepAspectRatio2:
                                     cv2.drawContours(frame, [approx], -1, (0, 0, 255), 4)
                                     status = "Target(s) Acquired"
 
-                                    initBB = (x,y,w,h)
+                                    initBB = (x-10,y-10,w+10,h+10)
                                     print(initBB)
 
                                     # start OpenCV object tracker using the supplied bounding box
                                     # coordinates, then start the FPS throughput estimator as well
+                                    tracker = OPENCV_OBJECT_TRACKERS["csrt"]()
                                     tracker.init(frame, initBB)
                                     if check == 0:
                                         fps = FPS().start()
@@ -177,30 +178,7 @@ while True:
 camera.release()
 cv2.destroyAllWindows()
 
-"""
-               for i in cnts:
-                   peri2 = cv2.arcLength(i, True)
-                   approx2 = cv2.approxPolyDP(i, 0.01 * peri2, True)
 
-                   if len(approx2) >= 4 and len(approx2) <= 6:
-
-                       (x2, y2, w2, h2) = cv2.boundingRect(approx2)
-
-
-                       aspectRatio2 = w2 / float(h2)
-
-
-                       # compute the solidity of the original contour
-                       area2 = cv2.contourArea(i)
-                       hullArea2 = cv2.contourArea(cv2.convexHull(i))
-                       solidity2 = area2 / float(hullArea2)
-
-                       # compute whether or not the width and height, solidity, and
-                       # aspect ratio of the contour falls within appropriate bounds
-                       keepDims2 = w2 > 25 and h2 > 25
-                       keepSolidity2 = solidity2 > 0.9
-                       keepAspectRatio2 = aspectRatio2 >= 0.8 and aspectRatio2 <= 1.2
-"""
 # bunun içinde bir tane daha for döngüsü olacak ve dörtgen çizcen çizilen dörtgenin x,y,w,h larını bulacan
 # biribirlerinden farklarını bulacaksın eğer varsa koordinatını alacaksın.
 # draw an outline around the target and update the status
