@@ -13,7 +13,7 @@ import time
 
 # load the video
 check = 0
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1)
 fps = None
 initBB = None
 OPENCV_OBJECT_TRACKERS = {
@@ -28,6 +28,9 @@ OPENCV_OBJECT_TRACKERS = {
 
 tracker = OPENCV_OBJECT_TRACKERS["csrt"]()
 count = 0
+
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('output.avi',fourcc, 20.0, (500,375))
 # keep looping
 while True:
     # grab the current frame and initialize the status text
@@ -38,8 +41,10 @@ while True:
     # video
     if not grabbed:
         break
-    frame = imutils.resize(frame, width=500)
+    frame = imutils.resize(frame, width=1000)
     (H, W) = frame.shape[:2]
+    print(H,W)
+
     # convert the frame to grayscale, blur it, and detect edges
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (7, 7), 0)
@@ -119,7 +124,7 @@ while True:
                     for j in cnts2:
                         peri2 = cv2.arcLength(j, True)
                         approx2 = cv2.approxPolyDP(j, 0.01 * peri2, True)
-                        if len(approx2) >= 4 and len(approx2) <= 6:
+                        if len(approx2) >= 4 and len(approx2) <= 10:
                             x2, y2, w2, h2 = cv2.boundingRect(approx2)
 
                             if (x2 - x) > 0 and (y2 - y) > 0 and (h - h2) > 0 and (w - w2) > 0:
@@ -167,6 +172,7 @@ while True:
                                                                                                     (0, 0, 255), 2)
 
     # show the frame and record if a key is pressed
+    out.write(frame)
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(1) & 0xFF
 
