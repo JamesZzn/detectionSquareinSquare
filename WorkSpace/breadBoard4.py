@@ -12,7 +12,7 @@ import time
 # co
 count8=0
 # load the video
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1)
 
 # keep looping
 while True:
@@ -36,7 +36,7 @@ while True:
 
     # find contours in the edge map
     cnts = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL,
-                            cv2.CHAIN_APPROX_SIMPLE)
+                            cv2.CHAIN_APPROX_SIMPLE)q
     cnts = imutils.grab_contours(cnts)
 
     for c in cnts:

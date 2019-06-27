@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/WorkSpace/timed2.py" line="120" mnemonic="7" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2369ba4d-8ab2-4376-9505-428d01941b2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkSpace/TimedDetectionAndTracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkSpace/TimedDetectionAndTracking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkSpace/breadBoard.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkSpace/breadBoard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkSpace/breadBoard2.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkSpace/breadBoard2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkSpace/breadBoard4.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkSpace/breadBoard4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkSpace/breadBoard5.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkSpace/breadBoard5.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="2100">
               <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
             </state>
           </provider>
@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="294">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="96" column="73" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="73" />
+            <state relative-caret-position="-604">
+              <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
               <folding>
                 <element signature="e#82#97#0" expanded="true" />
               </folding>
@@ -53,8 +53,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WorkSpace/TimedDetectionAndTracking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="336">
+              <caret line="70" column="21" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="70" selection-end-column="21" />
+              <folding>
+                <element signature="e#82#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WorkSpace/timed2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="34" />
+              <folding>
+                <element signature="e#82#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WorkSpace/timed3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="719">
+              <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
               <folding>
                 <element signature="e#82#97#0" expanded="true" />
               </folding>
@@ -65,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
+            <state relative-caret-position="966">
               <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
               <folding>
                 <element signature="e#83#97#0" expanded="true" />
@@ -77,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="903">
               <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
               <folding>
                 <element signature="e#153#190#0" expanded="true" />
@@ -100,6 +124,9 @@
       <find>rati</find>
       <find>frame</find>
       <find>radius</find>
+      <find>check</find>
+      <find>k</find>
+      <find>k</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,10 +138,12 @@
         <option value="$PROJECT_DIR$/WorkSpace/breadBoard3.py" />
         <option value="$PROJECT_DIR$/WorkSpace/followSquare.py" />
         <option value="$PROJECT_DIR$/WorkSpace/breadBoard5.py" />
-        <option value="$PROJECT_DIR$/WorkSpace/TimedDetectionAndTracking.py" />
         <option value="$PROJECT_DIR$/WorkSpace/breadBoard2.py" />
         <option value="$PROJECT_DIR$/WorkSpace/breadBoard.py" />
         <option value="$PROJECT_DIR$/WorkSpace/breadBoard4.py" />
+        <option value="$PROJECT_DIR$/WorkSpace/TimedDetectionAndTracking.py" />
+        <option value="$PROJECT_DIR$/WorkSpace/timed3.py" />
+        <option value="$PROJECT_DIR$/WorkSpace/timed2.py" />
       </list>
     </option>
   </component>
@@ -178,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.breadBoard4">
+  <component name="RunManager" selected="Python.timed2">
     <configuration name="TimedDetectionAndTracking" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="KareTakip" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -221,27 +250,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="breadBoard2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="KareTakip" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WorkSpace" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WorkSpace/breadBoard2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="breadBoard4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="KareTakip" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,7 +271,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="breadBoard5 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="timed2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="KareTakip" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,7 +283,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WorkSpace/breadBoard5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WorkSpace/timed2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="timed3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="KareTakip" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WorkSpace" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WorkSpace/timed3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -286,11 +315,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.timed2" />
+        <item itemvalue="Python.timed3" />
+        <item itemvalue="Python.TimedDetectionAndTracking" />
         <item itemvalue="Python.breadBoard4" />
         <item itemvalue="Python.breadBoard" />
-        <item itemvalue="Python.breadBoard2" />
-        <item itemvalue="Python.TimedDetectionAndTracking" />
-        <item itemvalue="Python.breadBoard5 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -386,43 +415,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/imutils/video/fps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Veriler/ters.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Veriler/k4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WorkSpace/followSquare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1953">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding>
-            <element signature="e#82#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/numpy/core/arrayprint.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="1502" selection-start-line="1502" selection-end-line="1502" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WorkSpace/TimedDetectionAndTracking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#82#97#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -436,9 +438,32 @@
     <entry file="file://$PROJECT_DIR$/Veriler/t3.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Veriler/t4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Veriler/t2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
+        <state relative-caret-position="966">
           <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
           <folding>
             <element signature="e#83#97#0" expanded="true" />
@@ -448,7 +473,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
+        <state relative-caret-position="903">
           <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
           <folding>
             <element signature="e#153#190#0" expanded="true" />
@@ -456,33 +481,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Veriler/t4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Veriler/t2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard2.py">
+    <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="-604">
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#82#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/imutils/video/fps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+        <state relative-caret-position="84">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WorkSpace/breadBoard4.py">
+    <entry file="file://$PROJECT_DIR$/WorkSpace/followSquare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="96" column="73" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="73" />
+        <state relative-caret-position="462">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#82#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkSpace/TimedDetectionAndTracking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="70" column="21" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="70" selection-end-column="21" />
+          <folding>
+            <element signature="e#82#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkSpace/timed3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+          <folding>
+            <element signature="e#82#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkSpace/timed2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="34" />
           <folding>
             <element signature="e#82#97#0" expanded="true" />
           </folding>

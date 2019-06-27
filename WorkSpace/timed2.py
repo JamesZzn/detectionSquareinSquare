@@ -12,10 +12,12 @@ import time
 # co
 
 # load the video
+
 check = 0
 camera = cv2.VideoCapture(1)
 fps = None
 initBB = None
+cv2.TrackerCSRT_create()
 OPENCV_OBJECT_TRACKERS = {
     "csrt": cv2.TrackerCSRT_create,
     "kcf": cv2.TrackerKCF_create,
@@ -28,6 +30,7 @@ OPENCV_OBJECT_TRACKERS = {
 
 tracker = OPENCV_OBJECT_TRACKERS["csrt"]()
 count = 0
+count2 = 0
 
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('output.avi',fourcc, 20.0, (500,375))
@@ -43,12 +46,14 @@ while True:
         break
     frame = imutils.resize(frame, width=1000)
     (H, W) = frame.shape[:2]
-    print(H,W)
+   # print(H,W)
 
     # convert the frame to grayscale, blur it, and detect edges
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (7, 7), 0)
     edged = cv2.Canny(blurred, 50, 150)
+    edged2 = edged.copy()
+    edged3 = edged.copy()
 
     # find contours in the edge map
     cnts = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL,
@@ -59,17 +64,61 @@ while True:
         # grab the new bounding box coordinates of the object
         (success, box) = tracker.update(frame)  # burada başarısız yani update işlemi başarısız oluynca ne olduğuna bak
         count = 1 + count
-        # check to see if the tracking was a success
+        #
+        # (x, y, w, h) = [int(v) for v in box]
+        # # cv2.rectangle(frame, (x, y), (x + w, y + h),
+        # #               (0, 255, 0), 2)
+        #
+        #
+        # edged3[:, :] = 0
+        # edged3[y:y + h, x:x + w ] = edged[y:y + h, x:x + w]
+        # cnts3 = cv2.findContours(edged3.copy(), cv2.RETR_EXTERNAL,
+        #                          cv2.CHAIN_APPROX_SIMPLE)
+        # cnts3 = imutils.grab_contours(cnts3)
+        #
+        # for k in cnts3:
+        #     peri3 = cv2.arcLength(k, True)
+        #     approx3 = cv2.approxPolyDP(k, 0.01 * peri3, True)
+        #     if len(approx3) >= 4 and len(approx3) <= 10:
+        #         # x3, y3, w3, h3 = cv2.boundingRect(approx3)
+        #         #
+        #         #
+        #         # aspectRatio3 = w3 / float(h3)
+        #         #
+        #         # # compute the solidity of the original contour
+        #         # area3 = cv2.contourArea(k)
+        #         # hullArea3 = cv2.contourArea(cv2.convexHull(k))
+        #         # solidity3 = area3 / float(hullArea3)
+        #         #
+        #         # # compute whether or not the width and height, solidity, and
+        #         # # aspect ratio of the contour falls within appropriate bounds
+        #         # keepDims3 = w3 > 5 and h3 > 5
+        #         # keepSolidity3 = solidity3 > 0.8  # oranlarla oynandi hassiyeti düşürmek icin
+        #         # keepAspectRatio3 = aspectRatio3 >= 0.8 and aspectRatio3 <= 1.2
 
-        (x, y, w, h) = [int(v) for v in box]
-        cv2.rectangle(frame, (x, y), (x + w, y + h),
-                      (0, 255, 0), 2)
+        if success:
+       # if success and keepDims and keepSolidity and keepAspectRatio:
+       # if success and len(approx3) >= 4 and len(approx3) <= 10:
+
+            (x, y, w, h) = [int(v) for v in box]
+            cv2.rectangle(frame, (x, y), (x + w, y + h),
+                          (0, 255, 0), 2)
+            print(success)
+        else:
+            initBB = None
+            print("none")
 
         if count == 30:
             initBB = None
-            print("fps ",success,box, initBB)
+            print("fps ", success, box, initBB)
             count = 0
-        # update the FPS counter
+
+
+        # if count == 30:
+        #     initBB = None
+        #     print("fps ",success,box, initBB)
+        #     count = 0
+        # # update the FPS counter
         fps.update()
         fps.stop()
 
@@ -115,7 +164,7 @@ while True:
 
                 # ensure that the contour passes all our tests
                 if keepDims and keepSolidity and keepAspectRatio:
-                    edged2 = edged.copy()
+
                     edged2[:, :] = 0
                     edged2[y + 10:y + h - 10, x + 10:x + w - 10] = edged[y + 10:y + h - 10, x + 10:x + w - 10]
                     cnts2 = cv2.findContours(edged2.copy(), cv2.RETR_EXTERNAL,
@@ -145,7 +194,8 @@ while True:
                                     cv2.drawContours(frame, [approx], -1, (0, 0, 255), 4)
                                     status = "Target(s) Acquired"
 
-                                    initBB = (x-10,y-10,w+10,h+10)
+                                    #initBB = (x-10,y-10,w+10,h+10)
+                                    initBB = (x,y,w,h)
                                     print(initBB)
 
                                     # start OpenCV object tracker using the supplied bounding box
@@ -174,6 +224,7 @@ while True:
     # show the frame and record if a key is pressed
     out.write(frame)
     cv2.imshow("Frame", frame)
+    cv2.imshow("edeged ", edged3)
     key = cv2.waitKey(1) & 0xFF
 
     # if the 'q' key is pressed, stop the loop
